@@ -9,7 +9,7 @@ class Footer extends Component{
 
         <>
         <footer className="footer">
-            <span>Copyright <strong>Cod3r</strong>© 2015-2021</span>
+            <span>Copyright <strong>Cod3r </strong>© 2015-2021</span>
         </footer>
         </>
 
