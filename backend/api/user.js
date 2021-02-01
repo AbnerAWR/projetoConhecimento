@@ -74,7 +74,8 @@ module.exports = app => {
             notExistsOrError(articles, 'Usuário possui artigos.')
 
             const rowsUpdated = await app.db('users')
-                .update({ id: req.params.id })
+                .update({deletedAt: new Date()})
+                .where({ id: req.params.id })
             existsOrError(rowsUpdated, 'Usuário não foi encontrado.')
 
             res.status(204).send()
