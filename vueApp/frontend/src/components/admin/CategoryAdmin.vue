@@ -92,7 +92,11 @@ export default {
         },
         loadCategory(category, mode = 'save') {
             this.mode = mode
-            this.category = { ...category }
+            this.category = { 
+                id: category.id,
+                name: category.name,
+                parentId: category.parentId
+                }
         }
     },
     mounted() {
