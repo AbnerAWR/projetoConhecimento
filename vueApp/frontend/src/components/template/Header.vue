@@ -8,19 +8,19 @@
              {{ title }}
             </router-link>
         </h1>
-        <UserDropDown v-if="!hideUserDropdown" />
+        <UserDropdown v-if="!hideUserDropdown" />
     </header>
 </template>
 
 <script>
-import UserDropDown from './UserDropDown'
+import UserDropdown from './UserDropdown'
 export default {
     name: 'Header',
-    components: { UserDropDown },
-    props:{
+    components: { UserDropdown },
+    props: {
         title: String,
         hideToggle: Boolean,
-        hideUseDropDown: Boolean
+        hideUserDropdown: Boolean
     },
     computed: {
         icon(){
